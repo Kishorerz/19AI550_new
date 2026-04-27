@@ -24,7 +24,7 @@ public class FirstScript : MonoBehaviour
     // Start is called before the first frame update
     void Start()
     {
-        print("Welcome to Unity");
+        print("Hello World");
     }
 
     // Update is called once per frame
@@ -36,6 +36,7 @@ public class FirstScript : MonoBehaviour
 ```
 ### Output:
 
+<img width="1919" height="1026" alt="Screenshot 2026-04-27 140558" src="https://github.com/user-attachments/assets/fea6854d-4757-4d88-b238-9d4f5d13b4db" />
 
 
 ### Result:

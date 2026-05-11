@@ -1,6 +1,6 @@
 # Ex.No: 3  Basic movements in Unity 
-### DATE:                                                                            
-### REGISTER NUMBER : 
+### DATE:
+### REGISTER NUMBER : 212223240072
 ### AIM: 
  To learn the basic movements translation,scaling and rotation of game objects through code.
 ### Procedure:
@@ -33,30 +33,30 @@ public class TransformOperations : MonoBehaviour
         // Translate (Move) object1 along the X-axis- Time.deltaTime to make movement smooth across all frame rates
         if (object1 != null)
         {
-           // object1.position += Vector3.right * moveSpeed;
-               object1.Translate(0.02f,0,0);
-
+            object1.position += Vector3.right * moveSpeed * Time.deltaTime;
         }
 
         // Rotate object2 around the Y-axis
         if (object2 != null)
         {
-            //object2.Rotate(Vector3.up * rotateSpeed * Time.deltaTime);
-            //object2.Rotate(0,0.02f.0);
+            object2.Rotate(Vector3.up * rotateSpeed * Time.deltaTime);
         }
 
         // Scale object3 up and down
         if (object3 != null)
         {
-           // float scaleChange = Mathf.PingPong(Time.time * scaleSpeed, 1f) + 0.5f; // generates a value that moves back and forth between 0 and length
-           // object3.localScale = new Vector3(scaleChange, scaleChange, scaleChange);
-            object3.localScale+=new Vector3(0.02f.0.02f,0);
-
+            float scaleChange = Mathf.PingPong(Time.time * scaleSpeed, 1f) + 0.5f; // generates a value that moves back and forth between 0 and length
+            object3.localScale = new Vector3(scaleChange, scaleChange, scaleChange);
         }
     }
 }
 ```
 ### Output:
+##  Initial position of object:
+<img width="850" alt="image" src="https://github.com/user-attachments/assets/7e0828aa-5d96-41dc-a8a0-0b9d4c834aac" />
+
+## After movement: 
+<img width="850" alt="image" src="https://github.com/user-attachments/assets/e9b67aa8-8096-497a-b157-2e64efe01d29" />
 
 
 
